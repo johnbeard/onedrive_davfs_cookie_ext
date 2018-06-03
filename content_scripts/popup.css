@@ -1,0 +1,45 @@
+/*
+ Styling for Onedrive DavFS Cookie extension
+ */
+
+ /* The main popup container floats in the centre */
+.davfs_config_popup {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 45em;
+    height: 15em;
+    margin: auto;
+    background-color: #f3f3f3;
+    padding: 10px;
+    resize: both;
+}
+
+/* Centred */
+.davfs_config_centred {
+    text-align: center;
+}
+
+/* Any code */
+.davfs_config_code {
+    font-family: monospace;
+}
+
+/* The block that shows the config data */
+.davfs_config_data {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    word-wrap:break-word;
+    overflow: scroll;
+    height: 8em;
+    background-color: #cccccc;
+
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}

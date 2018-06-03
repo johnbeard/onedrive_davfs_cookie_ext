@@ -1,0 +1,37 @@
+{
+
+  "manifest_version": 2,
+  "name": "OneDrive DavFS Cookie Finder",
+  "version": "1.0",
+
+  "description": "Reads cookies from Microsoft OneDrive in a way that can be easily used in davfs.conf",
+
+  "icons": {
+    "48": "icons/onedrive-48.png",
+    "96": "icons/onedrive-96.png"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches":    ["https://*.sharepoint.com/*"],
+      "css":        ["content_scripts/popup.css"],
+      "js":         ["content_scripts/popup.js"]
+    }
+  ],
+
+  "page_action": {
+    "default_icon": "icons/cookies-48.png",
+    "browser_style": true,
+    "show_matches": ["https://*.sharepoint.com/*"]
+  },
+
+  "permissions": [
+    "https://*.sharepoint.com/*",
+    "tabs",
+    "cookies"
+  ]
+}
