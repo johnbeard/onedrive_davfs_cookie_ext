@@ -6,6 +6,10 @@ keep the cookies up to date.
 This is an extension to help you do that. To use it:
 
 * Install the extension.
+  * From the [Firefox Addon page](amo_link)
+  * From an XPI at [Github releases](github_releases)
+  * Building yourself and install in `about:debugging`. See the "Developing"
+    section below.
 * Navigate to any OneDrive directory in the browser
 * Click the "cookie" icon in the address bar
 * Copy the resulting line to your `/etc/davfs/dsvfs.conf` file
@@ -61,6 +65,8 @@ You can load the exension in Firefox via `about:debugging`.
 
 To package it, use `make xpi`.
 
+[amo_link]: https://addons.mozilla.org/en-US/firefox/addon/onedrive-davfs-cookie-finder
+[github_releases]: https://github.com/johnbeard/onedrive_davfs_cookie_ext/releases
 [mount_one_drive_linux_vps]: https://shui.azurewebsites.net/2018/01/13/mount-onedrive-for-business-on-headless-linux-vps-through-webdav/
 
 [screenshot]: docs/davfs_cookie_screenshot.png
